@@ -8,15 +8,6 @@
     "tsConfigPath": "apps/fintech/tsconfig.app.json"
   },
   "projects": {
-    "fintech": {
-      "type": "application",
-      "root": "apps/fintech",
-      "entryFile": "main",
-      "sourceRoot": "apps/fintech/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/fintech/tsconfig.app.json"
-      }
-    },
     "gateway": {
       "type": "application",
       "root": "apps/gateway",
