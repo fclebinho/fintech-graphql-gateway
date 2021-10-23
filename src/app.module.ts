@@ -7,7 +7,6 @@ class AuthenticatedDataSource extends RemoteGraphQLDataSource {
   async willSendRequest({ request, context }) {
     // const { userId } = await decode(context.jwt);
     // request.http.headers.set('x-user-id', userId);
-    request.http.headers.set('authorization', context.jwt);
   }
 }
 
@@ -35,7 +34,6 @@ class BuildServiceModule {}
       useFactory: async () => ({
         gateway: {
           serviceList: [
-            /* services */
             // { name: 'users', url: 'http://user-service/graphql' },
             // { name: 'posts', url: 'http://post-service/graphql' },
             {
@@ -45,6 +43,7 @@ class BuildServiceModule {}
           ],
         },
         server: {
+          // cors: true,
           context: ({ req }) => ({
             jwt: req.headers.authorization,
           }),
