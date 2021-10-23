@@ -38,7 +38,7 @@ class BuildServiceModule {}
             // { name: 'posts', url: 'http://post-service/graphql' },
             {
               name: 'financial',
-              url: 'https://fintech-finacial-api.herokuapp.com/graphql',
+              url: 'https://staging-financial-api.herokuapp.com/graphql',
             },
           ],
         },
