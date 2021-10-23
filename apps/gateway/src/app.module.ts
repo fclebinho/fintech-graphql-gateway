@@ -38,6 +38,10 @@ class BuildServiceModule {}
             /* services */
             // { name: 'users', url: 'http://user-service/graphql' },
             // { name: 'posts', url: 'http://post-service/graphql' },
+            {
+              name: 'financial',
+              url: 'https://fintech-finacial-api.herokuapp.com/graphql',
+            },
           ],
         },
         server: {
