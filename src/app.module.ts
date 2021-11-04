@@ -38,7 +38,7 @@ class BuildServiceModule {}
             // { name: 'posts', url: 'http://post-service/graphql' },
             {
               name: 'financial',
-              url: 'https://staging-financial-api.herokuapp.com/graphql',
+              url: 'https://staging-graphql-gateway.herokuapp.com/graphql',
             },
           ],
         },
