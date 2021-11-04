@@ -45,7 +45,10 @@ class BuildServiceModule {}
         server: {
           playground: true,
           introspection: true,
-          // cors: true,
+          cors: {
+            origin: '*',
+            credentials: true,
+          },
           context: ({ req }) => ({
             jwt: req.headers.authorization,
           }),
